@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Disease Detection</h1>
+        
+        <!-- Image Upload Form -->
+        <!-- <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="imageUpload">Upload Image:</label>
+            <input type="file" name="image" id="imageUpload" accept="image/*" required>
+            <button type="submit">Detect Disease</button>
+        </form>
+
+        <hr>
+
+        <!-- Real-Time Camera Capture -->
+        <!-- <h2>Or Capture Image in Real Time</h2>
+        <video id="videoInput" autoplay></video>
+        <button id="captureButton">Capture Image</button>
+        <canvas id="canvasOutput" style="display: none;"></canvas>
+    </div>
+</body> -->
+<!-- </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1 data-translate="title">Crop Disease Detection</h1>
+            <div class="nav-links"> </div>
+                <a href="/" data-translate="home">Home</a>
+                <a href="/about" data-translate="about">About</a>  </div>
+                <div class="language-select"> </div>
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+        </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2 data-translate="heroTitle">Empowering Agriculture with Smart Disease Detection</h2>
+            <p data-translate="heroText">Detect crop diseases easily and improve your harvest with AI-powered insights.</p>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <h2 data-translate="uploadTitle">Upload Image</h2>
+            <form action="/predict" method="POST" enctype="multipart/form-data" class="upload-form">
+                <input type="hidden" name="language" id="selectedLanguage" value="en"> </input>
+                <input type="file" name="image" id="imageUpload" accept="image/*" required>
+                <button type="submit" data-translate="detectButton">Detect Disease</button>
+            </form>
+        </section>
+
+        <!-- Real-Time Camera Section -->
+        <section class="camera-section">
+            <h2 data-translate="cameraTitle">Or Capture Image in Real-Time</h2>
+            <video id="videoInput" autoplay></video>
+            <canvas id="canvasOutput"></canvas>
+            <button id="startCameraButton" data-translate="startCamera">Start Camera</button>
+            <button id="captureButton" style="display: none; justify-content: center;" data-translate="captureImage">Capture Image</button>
+        </section>
+    </main>
+
+    <footer>
+        <p data-translate="footerText">Crop Disease Detection &copy; 2024 | All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,156 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #5a5a5a;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+} */
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5em;
+    color: #003973;
+    margin-bottom: 20px;
+}
+
+/* Subheaders */
+h2, h3 {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 15px auto;
+    font-size: 1em;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+    transform: scale(1.05);
+}
+
+/* Webcam and Image */
+video, canvas {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradients for sections */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    margin: 30px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+a:hover {
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+/* Footer (Optional Styling) */
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}*/

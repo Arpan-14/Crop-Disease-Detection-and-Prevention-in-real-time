@@ -1,0 +1,264 @@
+:root {
+    --primary-color: #38a169; /* Green */
+    --accent-color: #ff8c00; /* Orange */
+    --background-color: #f4f7f6; /* Light Background */
+    --text-color: #333;
+    --header-font: 'Poppins', sans-serif;
+    --hover-scale: 1.05;
+    --button-radius: 5px;
+    
+}
+
+/* General Layout */
+body {
+    font-family: var(--header-font);
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    /* max-width: 100%;
+    max-height: 100%; */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 960px; /* Or a suitable max-width */
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Align items on opposite ends */
+    align-items: center;
+}
+
+.nav-links {
+    margin-right: 20px; /* Space between links and language select */
+
+}
+
+.nav-links a{
+    margin-left: 10px; /* Adjust spacing between links */
+
+}
+
+.language-select {
+    display: flex;
+    align-items: center; /* Vertically center language select */
+
+}
+
+header {
+    background: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to right, #38a169, #ff8c00);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Upload and Camera Section */
+.upload-section, .camera-section {
+    text-align: center;
+    margin: 40px 0;
+    
+}
+
+.upload-section input[type="file"] {
+    margin: 20px 0;
+    font-size: 1.1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-section button, .camera-section button {
+    background: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.upload-section button:hover, .camera-section button:hover {
+    transform: scale(var(--hover-scale));
+}
+
+/* Add the camera-section styles */
+.camera-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0; /* Same margin as upload-section */
+}
+
+
+.camera-section button {
+    background: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    margin-top: 20px; /* Space between text and button */
+}
+
+
+.camera-section button:hover {
+    transform: scale(var(--hover-scale));
+}
+
+/* Video styling */
+#videoInput {
+    max-width: 100%;              /* Limit the video width */
+    max-height: 100%;             /* Prevent the video from overflowing */
+    display: none;               /* Make it a block element */
+    margin: 20px auto;            /* Center video horizontally */
+    border-radius: 10px;          /* Optional: rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Optional: add shadow to video */
+}
+
+#canvasOutput {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px auto;            /* Center canvas horizontally */
+    border-radius: 10px;          /* Optional: rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: add shadow to canvas */
+}
+
+
+/* Result Card */
+
+
+.result-card {
+    display: flex;
+    align-items: flex-start; /* Align to top */
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.result-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-details {
+    text-align: center; /* Center text within details */
+    width: 100%; /* Occupy full width of the card */
+}
+
+/* .symptoms-cures-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.symptoms, .cures {
+    background-color: #f0f0f0; 
+    padding: 15px;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+} */
+
+.symptoms-cures-container {
+    display: flex;
+    justify-content: space-between; /* Side-by-side arrangement */
+    margin-top: 20px;
+    width: 100%; /* Occupy full width */
+
+}
+
+.symptoms, .cures {
+    flex: 1; /* Distribute available space equally */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.symptoms {
+    margin-right: 10px; /* Add space between symptoms and cures boxes */
+}
+
+.cures {
+    margin-left: 10px; /* Add space between cures and symptoms boxes */
+
+}
+
+/* Footer */
+footer {
+    position: relative; /* Ensure footer is below content */
+    bottom: 0; /* Stick to bottom */
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to bottom */
+    clear: both;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
